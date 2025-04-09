@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 import yfinance as yf
 from datetime import datetime, timedelta
 
-bot = telebot.TeleBot("7892648405:AAH5QbiItfRp7iBe7Xi2XG_m0YNYkQAcfyI")
+# bot = telebot.TeleBot("7892648405:AAH5QbiItfRp7iBe7Xi2XG_m0YNYkQAcfyI")
+bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
 
 user_state = {}
 
@@ -214,4 +215,5 @@ def draw_and_send_chart(chat_id):
 
 if __name__ == '__main__':
     print("Bot is running...")
-    bot.polling(none_stop=True)
+    # bot.polling(none_stop=True)
+    bot.infinity_polling()
