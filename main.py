@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import yfinance as yf
 from datetime import datetime, timedelta
 
-# bot = telebot.TeleBot("7892648405:AAH5QbiItfRp7iBe7Xi2XG_m0YNYkQAcfyI")
-bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
+bot = telebot.TeleBot("7892648405:AAH5QbiItfRp7iBe7Xi2XG_m0YNYkQAcfyI")
+# bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
 
 user_state = {}
 
